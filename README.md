@@ -74,7 +74,7 @@ docker build -t okta-awscli .
 ### Run the image with the command
 
 ```
-docker run -it --rm -v ~/.aws/credentials:/root/.aws/credentials -v ~/.okta-aws:/root/.okta-aws --profile default okta-awscli iam list-users
+docker run -it --rm -v ~/.aws:/root/.aws -v ~/.okta-aws:/root/.okta-aws okta-awscli --okta-profile hbc-digital --profile hbc-digital
 ```
 
 ### if you want to type less you can create an alias
